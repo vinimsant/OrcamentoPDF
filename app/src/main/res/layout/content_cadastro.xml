@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Cadastro">
+
+
+        <EditText
+            android:id="@+id/txtNome"
+            android:layout_width="365dp"
+            android:layout_height="52dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="76dp"
+            android:hint="Produto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtDescricao"
+            android:layout_width="365dp"
+            android:layout_height="153dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="Descrição"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNome" />
+
+        <EditText
+            android:id="@+id/txtValorAv"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="Valor a Vista"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescricao" />
+
+        <EditText
+            android:id="@+id/txtValorC"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="Valor no Cartão"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDescricao" />
+
+        <ImageView
+            android:id="@+id/novaFoto2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="68dp"
+            android:onClick="selecionarFoto2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.741"
+            app:layout_constraintStart_toEndOf="@+id/novaFoto1"
+            app:layout_constraintTop_toBottomOf="@+id/txtValorC"
+            app:srcCompat="@drawable/ic_insert_photo_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/novaFoto1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="72dp"
+            android:onClick="selecionarFoto1"
+            app:layout_constraintStart_toEndOf="@+id/foto3"
+            app:layout_constraintTop_toBottomOf="@+id/txtValorAv"
+            app:srcCompat="@drawable/ic_insert_photo_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <ImageView
+            android:id="@+id/foto3"
+            android:layout_width="102dp"
+            android:layout_height="152dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:onClick="selecionarFoto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtValorAv"
+            app:srcCompat="@drawable/ic_insert_photo_black_24dp"
+            tools:ignore="VectorDrawableCompat" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+</ScrollView>
+

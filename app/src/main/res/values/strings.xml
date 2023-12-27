@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Orçamento PDF</string>
+    <string name="title_activity_cadastro">Cadastro</string>
+    <string name="title_activity_capa_pdf">CapaPDF</string>
+</resources>
